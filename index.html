@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_10-Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="cadastro">
+        <h1>formulário de cadastro</h1>
+        <br> <br>
+        <form>
+            <!-- label for identifica o id do input
+            name-> utilizando para associar com o js
+            placeholder -> exibe a informação a ser digitada
+            maxlenght tamanho da caixa do input
+            autofocus required -> o cursor será posicionado no inicio do input
+        --> 
+
+            <label for="lnome">nome:</label>
+<input type="text" id="lnome"name="inome"placeholder="digite o seu nome"
+maxlength="30" autofocus required >
+<br> <br>
+<label for="ldtnasc">data de nascimento </label>
+<input type="date"name="idtnasc" id="ldtnasc"min="1950-01-01 "max="2024-12-31">
+<label for=" lidade">idade</label>
+<input type="number" name="nidade" id="lidade" min="21" max="65">
+<br> <br>
+<label for="lmaior">Maior de idade:</label>
+<input type="checkbox" name="imaior" id="lmaior">
+<br> <br>
+<label for="lsexo">Sexo</label>
+<input type="radio" name="isexo" id="sexoF" value="F" checked>Feminino
+<input type="radio" name="isexo" id="sexoM" value="M" checked>Masculino
+<br> <br>
+<label for="lhorarioentrevista">horário da entrevista: </label>
+<input type="time" name="nhorarioentrevista" id="ihorarioentrevista">
+<br> <br>
+<label for ="isitepessoal">Site Pesoal</label>
+<input type="url" name="isitepessoal" id="isitepessoal" value="https://www.cps.sp.gov.br/etec/">
+ <br> <br>
+ <label for="itelefone">telefone</label>
+ <input type="tel" name="itelefone" id="ltelefone" pattern=" [0-9]{2}-[0-9] {5}-[0-9]{4}"placeholder="99 99999-9999">
+<br> <br>
+<label for="ltempoexp">tempo de experiência</label>
+<input list="ltempoexp">
+<datalist id="ltempoexp">
+    <option value=" menos de um ano">novato</option>
+    <option value=" entre 2 e 5 anos">Pleno</option>
+    <option value=" mais de 5 anos">Senior</option>
+       </datalist>
+       <br> <br>
+       <label for="ldatahorarioentrevista">data-horário entrevista</label>
+       <input type="datatime-local" name="ndatahorarioentrevista" id="ldatahorarioentrevista">
+      <br> <br>
+       <label for=" lultimoemprego">Data Do ùltimo Emprego</label>
+       <input type="month" name="nultimoemprego" id="lultimoemprego"> 
+       <br> <br>
+       <label for="lconhecimento"> conhecimento em informática</label>
+       <select name="iconhecimento" id="lconhecimento" >
+        <option value="word">word</option>
+        <option value="win">windows</option>
+        <option value="excel">excel</option>
+        <option value="html">html</option>
+        </select>
+      <br> <br>  
+    <label for="larquivo">Arquivo</label> 
+        <input type="file" name="arquivo" id=" larquivo" accept=".docx">  
+       <br> <br>
+        <label for=" lcor">selecione uma cor</label>    
+        <input type="color" name="icor" id="lcor">
+        <br> <br>
+     <label for="lemail">email</label>
+       <input type="email" name="nemail" id="lemail">
+       <br> <br>
+       <label for="lsenha">Digite Sua Senha</label>
+       <input type="password" name="iseha" id="lsenha">
+       
+       
+
+ 
+ <br> <br>
+<input type="reset" value="limpar">
+<input type="submit" value="enviar">
+
+        </form>
+
+
+
+    </div>
+    
+</body>
+
+</html>
